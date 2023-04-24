@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: url(./images/bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container {
+    background: #fff;
+    height: 100%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.30);
+}
+
+.container .inner {
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header .title h1 {
+    color: #7BDBF4;
+}
+
+.header .input_box {
+    height: 30px;
+}
+
+.header .input_box input {
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #7BDBF4;
+    border-radius: 4px;
+    outline: none;
+}
+
+.header .input_box button {
+    border: 1px solid #7BDBF4;
+    color: #7BDBF4;
+    border-radius: 4px;
+    background: #fff;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main .tap {
+    display: flex;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.main .tap li {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.main #under_line {
+    height: 3px;
+    background: #7BDBF4;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    padding: 0;
+    transition: .4s;
+}
+
+.main .tap li span {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    display: block;
+}
+
+.main .content li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border: 1px solid #eee;
+    font-size: 18px;
+}
+
+.main .content li p {
+    padding-left: 20px;
+}
+
+.main .content li.item_done {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.main .content li.item_done p {
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+.main .content li .button {
+    height: 100%;
+    background: #fff;
+}
+
+.main .content li button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.main .content li button:hover {
+    background: #adff2f;
+}
